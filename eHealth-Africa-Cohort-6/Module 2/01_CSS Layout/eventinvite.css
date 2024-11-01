@@ -1,0 +1,71 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #656583;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .invite-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .event-title {
+    font-size: 24px;
+    color: #4a90e2;
+    margin-bottom: 15px;
+  }
+  
+  .event-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .event-description p {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .rsvp-button {
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .rsvp-button:hover {
+    background-color: #ff4a4f;
+  }
+  
+  .special-guest {
+    font-size: 12px;
+    color: #999;
+    margin-top: 20px;
+  }
+  
+  footer {
+    font-size: 10px;
+    color: #aaaaaa;
+    margin-top: 20px;
+  }
+  

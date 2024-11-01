@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Position Planet</title>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #e0f7fa;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            #planet {
+                width: 400px;
+                position: relative;
+                margin-top: 100px;
+            }
+
+            #creature {
+                width: 100px;
+                position: absolute;
+                top: 230px;
+                left: 210px;
+                transform: rotate(-15deg);
+                z-index: 1;
+            }
+
+            #greeting {
+                background: rgb(255, 255, 0);
+                border: 2px solid black;
+                font-family: "Comic Sans MS", fantasy;
+                padding: 10px;
+                width: 260px;
+                position: absolute;
+                top: 150px;
+                left: 50px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                border-radius: 5px;
+                text-align: center;
+                z-index: 2;
+            }
+
+            #greeting::after {
+                content: '';
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+                border-width: 10px;
+                border-style: solid;
+                border-color: rgb(255, 255, 0) transparent transparent transparent;
+            }
+        </style>
+    </head>
+    <body>
+
+        <img id="planet" src="https://www.kasandbox.org/programming-images/space/planet.png" alt="Planet Image">
+
+        <div id="greeting">
+            <p>Hello! Welcome to Position Planet!</p>
+        </div>
+
+        <img id="creature" src="https://www.kasandbox.org/programming-images/avatars/mr-pink.png" alt="Creature Image">
+
+    </body>
+</html>
